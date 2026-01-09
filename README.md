@@ -1,88 +1,87 @@
-# Player-Role-Classification-Using-Velocity-and-Complexity-Metrics-in-Football
+# Player Role Classification Using Velocity and Complexity Metrics in Football
 
-Project Overview
+## Project Overview
 
-This project applies machine learning techniques to distinguish between attacking players (Forwards, FW) and defensive players (Defensive Midfielders, DM) using GPS-derived movement data. The focus is on identifying which features are most effective in separating these two roles based on velocity characteristics and movement complexity measures.
+This project applies machine learning techniques to distinguish between attacking players (Forwards, FW) and defensive players (Defensive Midfielders, DM) using GPS-derived movement data. The study focuses on identifying which movement features—based on velocity characteristics and nonlinear complexity measures—are most effective in separating these two tactical roles.
 
-Objective
+Understanding these differences supports data-driven decision-making in football performance analysis, coaching, and sports science.
 
-To determine the most significant features that differentiate attacking and defensive football players by analyzing:
+## Objective
 
-Velocity-based parameters
+The main objective of this project is to determine the most significant movement features that differentiate attacking and defensive football players by analyzing:
 
-Nonlinear and complexity-based movement measures
+- Velocity-based parameters  
+- Nonlinear and complexity-based movement measures  
 
-Data Processing
+## Data Processing
 
-Original Dataset
+### Original Dataset
 
-GPS tracking data containing multiple player roles and movement variables.
+- GPS tracking data collected from football players  
+- Includes multiple player roles and movement-related variables  
 
-Filtered Dataset
+### Filtered Dataset
 
-Reduced to include only:
+The dataset was reduced to include only two roles:
 
-Attacking players (FW)
+- Forwards (FW) – Attacking players  
+- Defensive Midfielders (DM) – Defensive-oriented players  
 
-Defensive midfielders (DM)
+## Feature Preparation
 
-Feature Preparation
+- Selection of velocity and movement complexity features  
+- Data cleaning and preprocessing  
+- Feature scaling and preparation for machine learning models  
 
-Selected velocity and complexity features
+## Features Used
 
-Data prepared for machine learning models
+### Velocity Parameters
 
-Features Used
-Velocity Parameters
+- Mean Velocity  
+- Coefficient of Variation (CV) of Velocity  
+- Maximum Velocity  
 
-Mean Velocity
+### Complexity Measures
 
-Coefficient of Variation (CV) of Velocity
+- Sample Entropy  
+- Hurst Exponent  
+- Fractal Dimension (Frac_Max)  
 
-Maximum Velocity
+These features capture both physical intensity and movement irregularity, reflecting differences in tactical demands between attacking and defensive roles.
 
-Complexity Measures
+## Machine Learning Methods
 
-Sample Entropy
+The following machine learning models were implemented and compared:
 
-Hurst Exponent
+- Logistic Regression  
+- Random Forest Classifier (RFC)  
+- Support Vector Machine (SVM)  
 
-Fractal Dimension (Frac_Max)
+### Model Evaluation
 
-These features aim to capture both physical intensity and movement irregularity, reflecting tactical role differences.
+- Cross-validation used for performance assessment  
+- Feature importance analysis performed to identify the most discriminative variables  
 
-Machine Learning Methods
+## Feature Selection & Analysis
 
-The following models were implemented and compared:
+- Feature significance extracted from each machine learning model  
+- Histograms used to visualize feature distributions  
+- Most relevant features selected for final model evaluation  
 
-Logistic Regression
+## Results
 
-Random Forest Classifier (RFC)
+- Machine learning models successfully distinguished between FW and DM roles  
+- Both velocity-based and complexity-based features contributed to classification  
+- Complexity measures (e.g., Sample Entropy and Hurst Exponent) provided additional discriminatory power beyond traditional speed metrics  
 
-Support Vector Machine (SVM)
+## Applications
 
-Each model was evaluated using cross-validation, and feature importance was analyzed to identify the most discriminative variables.
+- Football performance analysis  
+- Player role classification  
+- Sports science research  
+- GPS-based movement analytics  
+- Data-driven coaching and tactical support  
 
-Feature Selection & Analysis
+## Keywords
 
-Feature significance was extracted from ML models
-
-Histograms were used to visualize the distribution of all features
-
-The most relevant features were selected for final model evaluation
-
-Results
-
-Machine learning models demonstrated that both velocity-based and complexity-based features contribute to distinguishing FW and DM roles.
-
-Complex measures (e.g., Sample Entropy and Hurst Exponent) provided additional discriminatory power beyond traditional speed metrics.
-
-Applications
-
-Football performance analysis
-
-Player role classification
-
-Sports science and GPS analytics
-
-Data-driven coaching support
+Football Analytics, GPS Data, Machine Learning, Movement Complexity, Player Role Classification, Sports Science
